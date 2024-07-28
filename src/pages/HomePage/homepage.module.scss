@@ -1,0 +1,79 @@
+.container {
+  background-color: #ffdfd6;
+  height: 100%;
+  min-height: 100vh;
+  padding-bottom: 30px;
+  padding-left: 250px;
+  padding-top: 60px;
+
+  .box {
+    position: relative;
+    left: 20px;
+    width: 1000px;
+    height: 100%;
+  }
+
+  .navItem {
+    display: flex;
+    justify-content: space-between;
+
+    .add_button{
+        display: flex;
+        background-color: #3FA2F6;
+        color: white;
+        width: 200px;
+        height: 70px;
+        border-radius: 45px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        svg{
+          width: 30px;
+          height: 30px;
+        }
+        cursor: pointer;
+        .button{
+            font-size: 30px;
+    }
+    }
+  }
+
+  main {
+    padding-top: 50px;
+    .note{
+      width: auto;
+      height: auto;
+    }
+
+  }
+}
+
+.blurOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  z-index: 1000;
+  transition: all 0.3s ease;
+
+}
+
+.inputWrapper {
+  position: fixed;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+  // Add any additional styling for your Input component wrapper
+}
+
+@media (max-width: 800px) {
+  .navItem {
+    gap: 10rem;
+  }
+}

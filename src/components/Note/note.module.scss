@@ -1,0 +1,75 @@
+.container {
+  background-color: #e9ff97;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-top: 18px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .header {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .title {
+      font-size: 30px;
+      font-weight: 500;
+      height: auto;
+      flex-grow: 1;
+      font-family: Lexend;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      hyphens: auto;
+    }
+  }
+
+  .content {
+    font-family: Lexend;
+    font-size: 20px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    .category {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .oval {
+        width: 10px;
+        height: 10px;
+        background-color: blue;
+        border-radius: 100%;
+      }
+    }
+
+    .options {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+
+      svg {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+      }
+      svg:hover {
+        color: blue;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.toDoList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

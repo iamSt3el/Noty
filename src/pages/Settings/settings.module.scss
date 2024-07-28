@@ -1,0 +1,184 @@
+.container {
+  background-color: #ffdfd6;
+  height: 100vh;
+  padding-bottom: 30px;
+  padding-left: 270px;
+  padding-top: 30px;
+  .box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 20px;
+    width: 1000px;
+    height: 100%;
+    gap: 30px;
+
+    .title {
+      font-size: 40px;
+      font-weight: 500;
+      font-family: Lexend;
+    }
+
+    .theme,
+    .default_color,
+    .font_size,
+    .default_view {
+      font-size: 20px;
+      font-weight: 400;
+      font-family: Lexend;
+    }
+    .theme {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .button {
+        font-size: 30px;
+        font-family: Lexend;
+      }
+
+      .theme_buttons {
+        display: flex;
+        gap: 20px;
+        .light_button {
+          display: flex;
+          background-color: white;
+          color: black;
+          width: 150px;
+          height: 70px;
+          border-radius: 10px;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          cursor: pointer;
+        }
+
+        .dark_button {
+          display: flex;
+          background-color: black;
+          color: white;
+          width: 150px;
+          height: 70px;
+          border-radius: 10px;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .default_color {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .color {
+        border: 2px solid black;
+        width: 190px;
+        height: 70px;
+        background-color: yellow;
+      }
+    }
+
+    .font_size {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+
+      select {
+        font-size: 20px;
+        border: none;
+        outline: none;
+        padding-left: 10px;
+        border-radius: 5px;
+        height: 40px;
+      }
+    }
+
+    .default_view {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .button {
+        font-size: 30px;
+        font-family: Lexend;
+
+      }
+
+      .view_buttons {
+        display: flex;
+        gap: 20px;
+        .grid_button {
+          display: flex;
+          background-color: blue;
+          color: white;
+          width: 130px;
+          height: 70px;
+          border-radius: 10px;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+
+        }
+
+        .list_button {
+          display: flex;
+          background-color: white;
+          color: black;
+          width: 150px;
+          height: 70px;
+          border-radius: 10px;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .options {
+      .button {
+        font-size: 25px;
+        font-family: Lexend;
+
+      }
+      padding-top: 90px;
+      .options_buttons {
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+        .reset_button {
+          display: flex;
+          background-color: white;
+          color: black;
+          width: 250px;
+          height: 40px;
+          border-radius: 10px;
+          gap: 10px;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          svg{
+            width: 20px;
+            height: 30px;
+          }
+        }
+
+        .save_button{
+          display: flex;
+          background-color: blue;
+          color:white;
+          width: 250px;
+          height: 40px;
+          border-radius: 10px;
+          gap: 20px;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          svg{
+            width: 20px;
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+}
